@@ -1,2 +1,2 @@
 # w-j-gannon.github.io
-Practice repo
+Updated Portfolio created using Materialize.css

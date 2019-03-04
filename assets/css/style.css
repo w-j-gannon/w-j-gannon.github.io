@@ -1,0 +1,44 @@
+#skills {
+    color: #00838f;
+}
+
+.fa-github,
+.fa-linkedin,
+.fa-plus {
+    color: #00acc1;
+}
+
+#wPic {
+    opacity: 0.85 !important;
+}
+
+#wLogo {
+    height: 50px;
+    margin: 5px;
+}
+
+#parallax-box {
+    margin-top: 25%;
+    text-align: right;
+}
+
+.parallax-container {
+    height: 100vh;
+}
+
+.info-box {
+    padding-top: 15%;
+    padding-bottom: 10%;
+}
+
+.right-titles {
+    text-align: right;
+}
+
+.white-container {
+    padding-top: 10%;
+}
+
+.contact-item {
+    padding-top: 10%;
+}

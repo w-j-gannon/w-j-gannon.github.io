@@ -1,2 +1,2 @@
-# w-j-gannon.github.io
-Practice repo
+# William Gannon
+*My personal webpage, created with Materialize.css*

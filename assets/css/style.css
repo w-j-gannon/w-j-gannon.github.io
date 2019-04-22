@@ -1,3 +1,16 @@
+/* on load */
+
+@keyframes bodyOnLoad {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+body {
+    animation-name: bodyOnLoad;
+    animation-duration: 5s;
+}
+
+/* body */
 #skills {
     color: #00838f;
 }
@@ -39,6 +52,24 @@
     padding-top: 10%;
 }
 
+#p-text {
+    font-size: 3vh;
+}
+
+/* contact */
+
 .contact-item {
     padding-top: 10%;
+    margin-bottom: 5%;
 }
+
+#contact-row {
+    padding-bottom: 10%;
+}
+
+/* portfolio */
+
+#swipe-arrow {
+    height: 100%;
+}
+

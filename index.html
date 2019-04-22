@@ -63,11 +63,11 @@
     <div id="about" class="section cyan darken-3 info-box">
         <div class="row container">
             <h2 class="header white-text">About Me</h2>
-            <p class="grey-text text-lighten-3">
+            <p class="grey-text text-lighten-3" id="p-text">
                 My name is William Gannon - but you can call me Bill. 
-                I am currently enrolled in the University of Texas Full Stack Coding Bootcamp. I have studied <strong>HTML</strong>, 
-                <strong>CSS</strong>, and <strong>JavaScript</strong> and look forward to learning more back-end frameworks in the coming months. 
-                Upon completion of the program I will be looking to start a Development career here in Austin. 
+                I am currently enrolled in the University of Texas Full Stack Coding Bootcamp. I have studied many front-end frameworks, 
+                Node.js-based back-end development, MySQL and NoSQL databases, and look forward to learning more.  
+                Upon completion of the program I will be looking to start a Development career here in Austin, TX. 
                 <br>
                 <br>
                 I moved to Austin in 2012 with my wife, Cynthia. We previously lived in Boston, where we met while 
@@ -86,6 +86,9 @@
         <div class="parallax"><img src=""></div>
         <div class="container white-container">
             <h2 class="header black-text right-titles">Development Skills</h2>
+            <p class="black-text right-align" id="p-text">
+                A sampling of my growing skillset. Always looking to add more!
+            </p>
             <!-- first row -->
             <div class="row">
                 <!-- html -->
@@ -140,24 +143,143 @@
     <div id="portfolio" class="section cyan darken-2 info-box">
         <div class="row container">
             <h2 class="header white-text">Portfolio</h2>
-            <p class="grey-text text-lighten-3">
-                Flip through some of my projects and click to find them hosted on GitHub.
+            <p class="grey-text text-lighten-3" id="p-text">
+                Swipe through some of my projects and click to find them hosted on GitHub or Heroku.
             </p>
-            <div class="container">
-                <div class="carousel carousel-slider">
+            <br>
+            
+            <div class="row valign-wrapper">
+                <div class="col s2" id="swipe-arrow">
+                    <i class="large material-icons white-text center-align">keyboard_arrow_left</i>
+                </div>
+                
+                <div class=" col s8 carousel carousel-slider">
+                    
                     <!-- EAT-DA-BURGER -->
-                    <a href="https://safe-stream-26975.herokuapp.com/" target="_blank" class="carousel-item">
-                        <img src="assets/images/burger.PNG" alt="burger-app">
+                    <div class="card large carousel-item">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img src="assets/images/burger.PNG" alt="burger-app">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4"><i class="material-icons right">more_vert</i></span>
+                            
+                            <a href="https://safe-stream-26975.herokuapp.com/" target="_blank" class="waves-effect waves-light btn-large">Deployed App</a>
+                            <a href="https://github.com/w-j-gannon/EatDaBurger" target="_blank" class="waves-effect waves-light btn-large">Code Repo</a>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">EAT-DA-BURGER<i class="material-icons right">close</i></span>
+                            <p id="p-text">
+                                Keep track of the burgers you want to try and those you've already eaten.
+
+                                This is a full-stack application which uses MySQL to persistantly track your burger data.
+                                    
+                                <h5>Technologies</h5>
+
+                                <ul>
+                                    <li><a href="https://nodejs.org/en/" target="_blank">Node.js</a></li>
+                                    <li><a href="https://expressjs.com/" target="_blank">Express</a></li>
+                                    <li><a href="https://www.mysql.com/" target="_blank">MySQL</a></li>
+                                    <li><a href="https://elements.heroku.com/addons/jawsdb" target="_blank">JawsDB</a></li>
+                                    <li><a href="https://jquery.com/" target="_blank">jQuery</a></li>
+                                    <li><a href="https://handlebarsjs.com/" target="_blank">Handlebars</a></li>
+                                    <li><a href="http://getbootstrap.com/" target="_blank">Bootstrap</a></li>
+                                </ul>
+                                    
+                                <i>Created for the UT Austin Coding Bootcamp, March 2019</i>
+                            </p>
+                        </div>
+                    </div>
+
                     <!-- friendFinder -->
-                    <a href="https://infinite-inlet-57201.herokuapp.com/" target="_blank" class="carousel-item">
-                        <img src="assets/images/friendFinder.PNG" alt="friend-finder">
+                    <div class="card large carousel-item">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img src="assets/images/friendFinder.PNG" alt="friend-finder">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4"><i class="material-icons right">more_vert</i></span>
+                            
+                            <a href="https://infinite-inlet-57201.herokuapp.com/" target="_blank" class="waves-effect waves-light btn-large">Deployed App</a>
+                            <a href="https://github.com/w-j-gannon/FriendFinder" target="_blank" class="waves-effect waves-light btn-large">Code Repo</a>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Friend Finder<i class="material-icons right">close</i></span>
+                            <p id="p-text">
+                                Take a short quiz and get matched with your "very real" new best friend!
+
+                                This is a basic full-stack application using Node and Express.
+                                    
+                                <h5>Technologies</h5>
+
+                                <ul>
+                                    <li><a href="https://nodejs.org/en/" target="_blank">Node.js</a></li>
+                                    <li><a href="https://expressjs.com/" target="_blank">Express</a></li>
+                                    <li><a href="https://jquery.com/" target="_blank">jQuery</a></li>
+                                    <li><a href="http://getbootstrap.com/" target="_blank">Bootstrap</a></li>
+                                </ul>
+                                    
+                                <i>Created for the UT Austin Coding Bootcamp, March 2019</i>
+                            </p>
+                        </div>
+                    </div>
+
                     <!-- Bamazon -->
-                    <a href="https://w-j-gannon.github.io/Bamazon/" target="_blank" class="carousel-item">
-                        <img src="assets/images/bamazon.PNG" alt="liri-bot">
+                    <div class="card large carousel-item">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img src="assets/images/bamazon.PNG" alt="Bamazon">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Bamazon<i class="material-icons right">more_vert</i></span>
+                            
+                            <a href="https://github.com/w-j-gannon/Bamazon" target="_blank" class="waves-effect waves-light btn-large">Code Repo</a>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Bamazon<i class="material-icons right">close</i></span>
+                            <p id="p-text">
+                                A CLI app that allows a customer to search for and "buy" available products. Inventory is tracked with a MySQL database run on a local server.
+    
+                                <h5>Technologies</h5>
+
+                                <ul>
+                                    <li><a href="https://nodejs.org/en/" target="_blank">Node.js</a></li>
+                                    <li><a href="https://www.npmjs.com/package/inquirer" target="_blank">Inquirer</a></li>
+                                    <li><a href="https://www.mysql.com/" target="_blank">MySQL</a></li>
+                                </ul>
+                                    
+                                <i>Created for the UT Austin Coding Bootcamp, March 2019</i>
+                            </p>
+                        </div>
+                    </div>
+    
                     <!-- LIRI -->
-                    <a href="https://github.com/w-j-gannon/LIRI-bot" target="_blank" class="carousel-item">
-                        <img src="assets/images/concert-this.PNG" alt="liri-bot">
-                    </a>
+                    <div class="card large carousel-item">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img src="assets/images/concert-this.PNG" alt="LIRI">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4"> LIRI<i class="material-icons right">more_vert</i></span>
+                            
+                            <a href="https://github.com/w-j-gannon/LIRI-bot" target="_blank" class="waves-effect waves-light btn-large">Code Repo</a>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">LIRI<i class="material-icons right">close</i></span>
+                            <p id="p-text">
+                                A Node.js CLI app that queries 3 APIs to return music and movie info to the user
+    
+                                <h5>Technologies</h5>
+
+                                <ul>
+                                    <li><a href="https://nodejs.org/en/" target="_blank">Node.js</a></li>
+                                    <li><a href="https://www.npmjs.com/package/inquirer" target="_blank">moment.js</a></li>
+                                    <li><a href="https://www.mysql.com/" target="_blank">Spotify API</a></li>
+                                    <li><a href="https://www.mysql.com/" target="_blank">Bands In Town API</a></li>
+                                    <li><a href="https://www.mysql.com/" target="_blank">OMDB API</a></li>
+                                </ul>
+                                    
+                                <i>Created for the UT Austin Coding Bootcamp, March 2019</i>
+                            </p>
+                        </div>
+                    </div>
+
                     <!-- Trivia -->
                     <a href="https://w-j-gannon.github.io/TriviaGame/" target="_blank" class="carousel-item">
                         <img src="assets/images/TriviaGame.PNG" alt="trivia-game">
@@ -180,6 +302,11 @@
                     </a>
                     
                 </div>
+
+                <div class="col s2" id="swipe-arrow">
+                    <i class="col s1 large material-icons white-text center-align">keyboard_arrow_right</i>
+                </div>
+                
             </div>
         </div>
     </div>
@@ -187,46 +314,57 @@
     <!-- contact -->
     <div id="contact" class="parallax-container">
         <div class="parallax"><img src=""></div>
-        <div class="container white-container">
+        <div class="container white-container" id="contact-box">
             <!-- heading -->
             <div class="row">
                 <div class="col s12">
                     <h2 class="header black-text right-titles">Contact</h2>
+                    <p class="black-text right-align" id="p-text">
+                        Thank you for visiting my site. Please explore my projects and reach out!
+                    </p>
                 </div>
             </div>
-            <!-- resume button -->
-            <div class="row center-align contact-item">
-                <a class="btn btn-large waves-effect cyan darken-1" href="assests/resume.pdf" target="_blank"><i class="material-icons left">insert_drive_file</i>R&eacute;sum&eacute;</a>
-            </div>
+
             <!-- links -->
-            <div class="row contact-item">
-                <!-- email -->
-                <div class="col s12 m6 l4 center-align contact-item">
-                    <a href="mailto:williamgannonii@gmail.com">
-                        <i class="material-icons cyan-text text-darken-1 large">email</i>
-                        <h6 class="grey-text text-darken-1">williamgannonii@gmail.com</h6>
+            <div class="row contact-item center-align" id="contact-row">
+                <!-- resume -->
+                <div class="col s12 m12 l2 offset-l1 center-align contact-item">
+                    <a href="assets/resume.pdf" target="_blank">
+                        <i class="material-icons cyan-text text-darken-1 large">insert_drive_file</i>
+                        <h6 class="grey-text text-darken-1">R&eacute;sum&eacute;</h6>
                     </a>
                 </div>
+
+                <!-- email -->
+                <div class="col s12 m6 l2 center-align contact-item">
+                    <a href="mailto:williamgannonii@gmail.com">
+                        <i class="material-icons cyan-text text-darken-1 large">email</i>
+                        <h6 class="grey-text text-darken-1">Email</h6>
+                    </a>
+                </div>
+
                 <!-- phone -->
-                <div class="col s12 m6 l4 center-align contact-item">
+                <div class="col s12 m6 l2 center-align contact-item">
                     <a href="tel:5185276596">
                         <i class="material-icons cyan-text text-darken-1 large">phone_iphone</i>
                         <h6 class="grey-text text-darken-1">(518) 527-6596</h6>
                     </a>
                 </div>
+
                 <!-- github/linkdin -->
                 <!-- github -->
-                <div class="col s6 m6 l2 center-align contact-item">
+                <div class="col s12 m6 l2 center-align contact-item">
                     
                     <a href="https://github.com/w-j-gannon">
-                        <i class="fab fa-4x fa-github"></i>
+                        <i class="fab fa-5x fa-github"></i>
                         <h6 class="grey-text text-darken-1">GitHub</h6>
                     </a>
-                </div>    
+                </div>
+
                 <!-- linkedin -->
-                <div class="col s6 m6 l2 center align"> 
+                <div class="col s12 m6 l2 center align contact-item"> 
                     <a href="https://www.linkedin.com/in/william-john-gannon-ii/">
-                        <i class="fab fa-4x fa-linkedin"></i>
+                        <i class="fab fa-5x fa-linkedin"></i>
                         <h6 class="grey-text text-darken-1">LinkedIn</h6>
                     </a>
                 </div>
